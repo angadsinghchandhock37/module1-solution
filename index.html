@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello All</title>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+<style media="screen">
+  body{
+    font-size: 1.5rem;
+  }
+</style>
+</head>
+<body ng-app="LunchCheck">
+<h1>Lunch Checker</h1>
+<div ng-controller="LunchCheckController">
+<div>
+<input type="text" ng-model="name"  ><span>{{helpMessage}}</span>
+<div class="">
+  <button ng-click="hungry();">Check If Too Much</button>
+</div>
+<p style="color: {{color}};  padding:1%; width:20%; border: 1px solid {{color}}; display:{{display}}">
+  {{output}}</p>
+</div>
+
+</div>
+</body>
+</html>
